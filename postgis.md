@@ -28,7 +28,7 @@
 	* ```./configure --prefix=/usr/local/pgsql/tools/gdal```
 6. postgis
 	* ```wget http://postgis.net/stuff/postgis-2.1.1dev.tar.gz```
-	*  ```./configure --prefix=/usr/local/pgsql/tools/postgis --with-pgconfig=/usr/local/pgsql/bin/pg_config  --with-geosconfig=/usr/local/pgsql/tools/geos/bin/geos-config --with-gdalconfig=/usr/local/pgsql/tools/gdal/bin/gdal-config --with-xml2config=/usr/local/pgsql/tools/libxml2/bin/xml2-config --with-projdir=/usr/local/pgsql/tools/proj/bin/proj```
+	*  ```./configure --prefix=/usr/local/pgsql/tools/postgis --with-pgconfig=/usr/local/pgsql/bin/pg_config  --with-geosconfig=/usr/local/pgsql/tools/geos/bin/geos-config --with-gdalconfig=/usr/local/pgsql/tools/gdal/bin/gdal-config --with-xml2config=/usr/local/pgsql/tools/libxml2/bin/xml2-config --with-projdir=/usr/local/pgsql/tools/proj/```
 	*  **检查是否安装成功** ```select name, default_version, installed_version from pg_available_extensions where name like 'postgis%';```
 7. ```createdb postgis```
 8. ```create extension postgis;```
