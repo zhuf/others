@@ -6,7 +6,7 @@
 * proj4
 * geos
 * libxml2
-* json-c
+* json-c(not installed is also ok!)
 * gdal
 
 ***
@@ -64,3 +64,7 @@ CREATE TABLE testtable (
 ```
 select _id,loc,songid,lastheartime,loc <-> '(120, 30)' distance from testtable ;
 ```
+
+***
+
+see also: [manual-2.1](http://postgis.net/docs/manual-2.1/postgis_installation.html)
